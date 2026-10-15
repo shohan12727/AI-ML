@@ -31,9 +31,35 @@ for batch in batch_generator(data, batch_size):
 # print(next(g))
 # print(next(g))
 
-#problem - 3
 
+
+
+
+
+#problem - 3
 
 my_list = [1,2,3,4]
 square_all_element_in_list = list(map(lambda x: x*x,my_list))
 print(square_all_element_in_list)
+
+
+
+# Problem - 4
+
+def powerFunc(base, exponent = 2):
+    return base ** exponent
+
+print(powerFunc(5))
+
+
+
+#problem - 5
+
+
+list_1 =  [1,2,3,4,5,6]
+
+even_numbers = list(filter(lambda x: x % 2 == 0, list_1))
+square_numbers = list(map(lambda x: x *x, even_numbers))
+print(square_numbers)
+
+
