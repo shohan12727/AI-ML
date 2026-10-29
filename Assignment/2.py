@@ -1,21 +1,20 @@
+
 def compute_ratio(x, y):
     try:
-        calculate =  (x + y) / (x * y)
-        return calculate
-    
+        result = (x + y) / (x * y)
+        return result
+
     except ZeroDivisionError:
-        error_message = "Division by zero"
-        return error_message
-        
-        
-        
-    
-x = int(input("Enter number x: "))
-y = int(input("Enter number y: "))    
+        return "Error: Division not possible"
 
-try:
-    result = compute_ratio(x,y)
-    print(result)
 
-except Exception as e:
-    print(e)
+user_input = input()
+
+split_values = user_input.split()
+
+x = int(split_values[0])
+y = int(split_values[1])
+
+result = compute_ratio(x, y)
+
+print(result)
